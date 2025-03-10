@@ -1,11 +1,13 @@
 setup = function() {
     size(400, 400);
+    drawStar(200, 200); 
 };
 
 var answer = 1;
 
 draw = function(){
   background(100,100,100);
+  drawStar(30,50);
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
   fill(60, 0, 255);
@@ -41,5 +43,13 @@ draw = function(){
 mouseClicked = function(){
   answer = round(random(1, 5));
 };
+
+//drawStar Function - will run when called 
+var drawStar = function(starX, starY){
+  textSize(50);
+  text("✨", starX, starY);
+};
+
+
 
 
